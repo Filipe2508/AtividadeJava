@@ -1,23 +1,25 @@
+combinacao()
 
-let timer = null;
-
-function startScroll() {
-  const input = document.getElementById('message');
-  if (timer === null) {
-    timer = setInterval(() => {
-      let text = input.value;
-      text = text.substring(1) + text.substring(0, 1);
-      input.value = text;
-    }, 200); 
+function fatorial(fatorial){
+  
+ let resultado = fatorial;
+  
+  for(let controle = 1; controle <  fatorial; controle++){
+    resultado = resultado * controle
   }
+
+   return Number(resultado);
 }
 
-function stopScroll() {
-  clearInterval(timer);
-  timer = null;
-}
+function combinacao(){
 
-window.onload = () => {
-  document.getElementById('startButton').addEventListener('click', startScroll);
-  document.getElementById('stopButton').addEventListener('click', stopScroll);
-};
+   let n = Number(prompt("Qual o numero "));
+   let k = Number(prompt("Qual a amostra "));
+
+   let resultado = fatorial(n) / fatorial(k) * fatorial(n-k)
+
+  document.getElementById("numero").innerHTML= n;
+  document.getElementById("amostras").innerHTML= k;
+  document.getElementById("resultado").innerHTML= Number(resultado); 
+  
+}
