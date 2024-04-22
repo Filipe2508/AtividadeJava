@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="Calculadora">
+      <input type="text" class="display" readonly>
+      <div class="buttons">
+        <button>Log</button>
+        <button>%</button>
+        <button>pi</button>
+        <button onclick="clear()">C</button>
+        <button>←</button>
+        <button>Sen</button>
+        <button>2Vx</button>
+        <button>x^2</button>
+        <button>x^y</button>
+        <button>1/x</button>
+        <button onclick="clear()">C</button>
+        <button>(</button>
+        <button>)</button>
+        <button>n!</button>
+        <button onclick="appendOperator('/')">/</button>
+        <button>T</button>
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button onclick="appendOperator('*')">*</button>
+        <button>Sh</button>
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button onclick="appendOperator('-')">-</button>
+        <button>Ch</button>
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button onclick="appendOperator('+')">+</button>
+        <button>Th</button>
+        <button>+/-</button>
+        <button onclick="appendNumber(3)">0</button>
+        <button>.</button>
+        <button class="equal">=</button>
+      </div>
+      
+    </div>
+    <script src="script4.js"></script>
+  </body>
+</html>
